@@ -11,7 +11,6 @@
     <div>
       <div class="lec-title">{{ lecture.title }}</div>
       <div class="lec-desc" :style="lecture.status === 'plan' ? 'color:#2a2a2a' : ''">{{ lecture.desc }}</div>
-      <div v-if="lecture.lecturer" class="lec-who">// Лектор: {{ lecture.lecturer }}</div>
     </div>
 
     <div :class="statusClass">{{ statusText }}</div>
