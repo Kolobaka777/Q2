@@ -55,6 +55,10 @@
         <CheckGrid label="Убрано из чеклиста прелендов" :items="checklistRemoved" />
         <CheckGrid label="Чеклист вайтов — добавлено" :items="whiteChecklistAdded" />
         <CheckGrid label="Новый чеклист: WordPress" :items="wordpressChecklist" />
+        <CheckGrid label="Новый чеклист: Gambling White" :items="gamblingWhiteChecklist" />
+        <CheckGrid label="Новый чеклист: Yodga (специфический спай)" :items="yodgaChecklist" />
+        <CheckGrid label="Новый чеклист: Динамические комментарии" :items="dynamicCommentsChecklist" />
+        <CheckGrid label="Автотесты — ручная проверка при сбое" :items="autoTestsManualChecklist" />
         <CheckGrid label="Полностью сняты с проверок на этапе верстки" :items="checklistDropped" />
       </template>
     </PlanSection>
@@ -66,7 +70,7 @@
 </template>
 
 <script setup>
-import { metrics, team, lectures, autoTests, manualTests, checklistAdded, checklistRemoved, checklistDropped, whiteChecklistAdded, wordpressChecklist, plans } from './data/index.js'
+import { metrics, team, lectures, autoTests, manualTests, checklistAdded, checklistRemoved, checklistDropped, whiteChecklistAdded, wordpressChecklist, gamblingWhiteChecklist, yodgaChecklist, dynamicCommentsChecklist, autoTestsManualChecklist, plans } from './data/index.js'
 
 import AppNav      from './components/AppNav.vue'
 import HeroSection from './components/HeroSection.vue'

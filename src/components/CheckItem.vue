@@ -1,5 +1,6 @@
 <template>
-  <div class="check-item">
+  <div v-if="item.isSection" class="check-section">{{ item.name }}</div>
+  <div v-else class="check-item">
     <div style="flex-shrink:0;margin-top:2px">
       <canvas
         ref="canvasRef"

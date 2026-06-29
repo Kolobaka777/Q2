@@ -197,6 +197,7 @@ nav a:hover, nav a.active { color: var(--accent); border-bottom-color: var(--acc
 .check-name { font-size: 13px; color: var(--muted); line-height: 1.5; min-width: 0; overflow-wrap: break-word }
 .check-name strong { display: block; color: var(--text); font-size: 13px; margin-bottom: 3px }
 .check-name a { color: #444; font-size: 12px; text-decoration: none; border-bottom: 1px solid #2a2a2a; transition: color var(--tr) }
+.check-section { grid-column: 1 / -1; padding: .5rem 1.25rem; font-size: 10px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); background: #0d0d0d; border: .5px solid var(--border); border-bottom: none }
 .check-name a:hover { color: var(--accent) }
 .lecture-item {
   background: var(--surface);
