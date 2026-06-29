@@ -37,7 +37,14 @@
     </PlanSection>
 
     <!-- П3: Оптимизация трекинга -->
-    <PlanSection v-bind="plans[2]" />
+    <PlanSection v-bind="plans[2]">
+      <template #after>
+        <div style="padding:0 2rem 2rem">
+          <div class="col-label" style="margin-bottom:1rem">Борда в действии</div>
+          <img src="/img/board.png" alt="Bugtest special — борда нелинейных задач" style="width:100%;border:1px solid var(--border);border-radius:4px;display:block" />
+        </div>
+      </template>
+    </PlanSection>
 
     <!-- П4: Технический контроль -->
     <PlanSection v-bind="plans[3]">
